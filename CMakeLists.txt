@@ -18,6 +18,6 @@ find_package(OpenGL REQUIRED)
 add_subdirectory(Engine)
 
 # Executable
-add_subdirectory(main)
+add_subdirectory(Main)
 
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT "${EXECUTABLE_NAME}")
