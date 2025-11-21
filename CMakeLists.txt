@@ -12,6 +12,7 @@ add_compile_definitions(UNICODE _UNICODE _CRT_SECURE_NO_WARNINGS)
 # Dependencies
 add_subdirectory(Dependencies/SDL EXCLUDE_FROM_ALL)
 add_subdirectory(Dependencies/cglm EXCLUDE_FROM_ALL)
+find_package(OpenGL REQUIRED)
 
 # Engine library
 add_subdirectory(Engine)

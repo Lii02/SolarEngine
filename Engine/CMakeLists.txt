@@ -7,5 +7,6 @@ target_sources(${ENGINE_NAME} PRIVATE
     ${SOURCES}
     ${HEADERS}
 )
+target_include_directories(${ENGINE_NAME} PUBLIC "${PROJECT_SOURCE_DIR}/Engine/thirdparty")
 target_include_directories(${ENGINE_NAME} PUBLIC "${PROJECT_SOURCE_DIR}/Dependencies/SDL/include")
 target_precompile_headers(${ENGINE_NAME} PUBLIC Precompiled.h)

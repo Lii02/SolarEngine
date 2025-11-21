@@ -6,8 +6,11 @@ target_sources(${EXECUTABLE_NAME} PRIVATE
     ${SOURCES}
     ${HEADERS}
 )
+target_include_directories(${EXECUTABLE_NAME} PUBLIC "${PROJECT_SOURCE_DIR}")
+target_include_directories(${EXECUTABLE_NAME} PUBLIC "${PROJECT_SOURCE_DIR}/Engine/thirdparty")
 target_include_directories(${EXECUTABLE_NAME} PUBLIC "${PROJECT_SOURCE_DIR}/Dependencies/SDL/include")
 target_link_libraries(${EXECUTABLE_NAME} PUBLIC
     ${ENGINE_NAME}
     SDL3::SDL3
+    OpenGL::GL
 )
