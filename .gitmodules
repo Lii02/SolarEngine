@@ -1,0 +1,6 @@
+[submodule "Dependencies/SDL"]
+	path = Dependencies/SDL
+	url = https://github.com/libsdl-org/SDL.git
+[submodule "Dependencies/cglm"]
+	path = Dependencies/cglm
+	url = https://github.com/recp/cglm.git
