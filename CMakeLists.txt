@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0)
-project(ProjectSignal)
+project(SolarEngine)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
@@ -18,6 +18,6 @@ find_package(OpenGL REQUIRED)
 add_subdirectory(Engine)
 
 # Executable
-add_subdirectory(src)
+add_subdirectory(main)
 
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT "${EXECUTABLE_NAME}")
